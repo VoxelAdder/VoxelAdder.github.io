@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap">
+<link rel="icon" href="favicon.ico">
+<title>VoxelAdder wiki</title>
+<style>
+	@font-face {
+		font-family: 'Minecraftia';
+		/* Since it's in the same folder, just use the filename */
+		src: url('minecraft.woff2') format('woff2');
+		font-weight: normal;
+		font-style: normal;
+	}
+
+	@font-face {
+		font-family: 'Roboto Mono Thin';
+		/* Since it's in the same folder, just use the filename */
+		src: url('robotomono.woff2') format('woff2');
+		font-weight: normal;
+		font-style: normal;
+	}
+		
+	@font-face {
+		font-family: 'Outfit';
+		/* Since it's in the same folder, just use the filename */
+		src: url('outfit.woff2') format('woff2');
+		font-weight: normal;
+		font-style: normal;
+	}
+
+	body {
+		margin: 0;
+		background-color: rgba(8, 8, 8, 0.9);
+		width: 100%; /* Using 100% instead of 100vw prevents scroll issues */
+		overflow-x: hidden;
+		min-height: 100vh;
+	}
+	
+	.vaheader {
+		background-color: rgb(71, 71, 71, 0.9);
+		position: sticky;
+		top: 0; /* Required for sticky to work */
+		border-radius: 0px 0px 5px 5px;
+		padding: 10px; /* Adds space inside the header instead of outside */
+		display: grid;
+		grid-template-columns: 10% 90%;
+	}
+
+	.vaheader h1 {
+		margin: 0;
+		font-family: "Archivo Black", sans-serif;
+		font-weight: 400;
+		text-shadow: 0px 0px 16px white;
+		color: rgb(227, 226, 225);
+		transition: 1.5s;
+	}
+	.vaheader h1:hover {
+		color: rgb(255, 255, 255, 1);
+		text-shadow: 0 0 12px white;
+	}
+	
+		.hbtn {
+			background-color: #1e1e1e;
+			border: 1px solid white;
+			border-radius: 5px;
+			margin: 1px 5px 1px 5px;
+			padding: 10px 10px 10px 10px;
+			color: white;
+			transition: 0.4s;
+			transition-timing-function: ease-in-out;
+		}
+		
+		.hbtns {
+			display: flex;
+			justify-content: center;
+		}
+		
+		.hbtn:hover {
+			background-color: white;
+			border: 1px solid black;
+			color: black;
+		}
+		
+		.whatabout {
+			padding: 20px;
+		}
+		
+		.whatabout #header {
+			font-family: "OutFit", sans-serif;
+			color: white;
+			opacity: 0.8;
+		}
+		
+		.whatabout #geysermc {
+			font-family: "Archivo Black", sans-serif;
+		}
+		
+		.whatabout #geysermc:link {
+			color: rgb(0, 4, 66);
+		}
+		
+		.whatabout #geysermc:visited {
+			color: rgb(11, 79, 2);
+		}
+			
+		
+	</style>
+
+</head>
+<body>
+	<div class="vaheader">
+		<h1 onclick="openva()">VoxelAdder</h1>
+		<div class="hbtns">
+			<button class="hbtn" onclick="btncmd(4)">Wiki</button>
+			<button class="hbtn" onclick="btncmd(5)">How to use</button>
+		</div>
+	</div>
+	<div class="whatabout">
+		<h2 id="header">What's VoxelAdder?</h2>
+		<p><span id="header">VoxelAdder is a plugin that can add custom contents like blocks,items,GUIs,armors to minecraft. It's mainly designed for compatibility. That's why it's support bedrock by </span><a id="geysermc" href="https://geysermc.org/">Geysermc plugin</a></p>
+	</div>
+</div>
+</body>
+</html>
