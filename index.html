@@ -217,11 +217,24 @@
 		
 		.hbtn {
 			background-color: #1e1e1e;
+			border: 1px solid white;
+			border-radius: 5px;
+			margin: 1px 5px 1px 5px;
+			padding: 10px 10px 10px 10px;
+			color: white;
+			transition: 0.4s;
+			transition-timing-function: ease-in-out;
 		}
 		
 		.hbtns {
 			display: flex;
 			justify-content: center;
+		}
+		
+		.hbtn:hover {
+			background-color: white;
+			border: 1px solid black;
+			color: black;
 		}
 		
 	</style>
@@ -231,8 +244,8 @@
 	<div class="vaheader">
 		<h1 onclick="openva()">VoxelAdder</h1>
 		<div class="hbtns">
-			<button style="hbtn">Wiki</button>
-			<button style="htbn">How to use</button>
+			<button class="hbtn" onclick="btncmd(4)">Wiki</button>
+			<button class="hbtn" onclick="btncmd(5)">How to use</button>
 		</div>
 	</div>
 	<div class="warnformobies">
@@ -357,6 +370,10 @@
 			window.location.href = "https://github.com/TamimhassanYT/VoxelAdder";
 		} else if (a === 3) {
 			window.location.href = "https://curseforge.com";
+		} else if (a === 4) {
+			window.location.href = "https://voxeladder.github.io/wiki/"
+		} else if (a === 5) {
+			window.location.href = "https://voxeladder.github.io/howtouse/"
 		}
 	};
 </script>
