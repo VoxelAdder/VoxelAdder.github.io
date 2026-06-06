@@ -1,0 +1,9 @@
+var SendMessage;
+var red;
+var green;
+var blue;
+var black;
+var white;
+var yellow;
+var gold;
+var aqua;
