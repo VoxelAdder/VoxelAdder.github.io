@@ -1,5 +1,5 @@
 {
   "url": "https://voxeladder.pages.dev",
-  "urlbackend": "https://voxeladder.team-tmv.workers.dev",
-  "devver": "1.0.0"
+  "url_backend": "https://voxeladder.team-tmv.workers.dev",
+  "dev_ver": "1.0.0"
 }
