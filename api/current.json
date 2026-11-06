@@ -1,7 +1,5 @@
 {
-  "curr": {
-    "url": "https://voxeladder.pages.dev",
-    "url_backend": "https://voxeladder.team-tmv.workers.dev",
-    "dev_ver": "1.0.0"
-  }
+  "url": "https://voxeladder.pages.dev",
+  "url_backend": "https://voxeladder.team-tmv.workers.dev",
+  "dev_ver": "1.0.0"
 }
